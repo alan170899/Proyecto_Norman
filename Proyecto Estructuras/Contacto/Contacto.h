@@ -7,6 +7,8 @@ typedef struct contacto {
 } t_contacto, *Contacto;
 
 int crearContacto(Contacto *nuevoContacto);
+int modificarNombre(Contacto contactoModificar, char* nuevoNombre);
+int modificarTelefono(Contacto contactoModificar, char* nuevoTelefono);
 
 
 #endif

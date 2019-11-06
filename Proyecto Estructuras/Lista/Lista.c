@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "ErrorCodes.h"
-#include "Lista\Lista.h"
+#include "../ErrorCodes.h"
+#include "Lista.h"
 
 int crearLista(Lista *nuevaLista) {
     Lista newLista = NULL;
