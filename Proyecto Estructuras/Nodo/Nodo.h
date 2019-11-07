@@ -1,7 +1,7 @@
 #ifndef _NODO_H_
 #define _NODE_H_
 
-#include "Contacto\Contacto.h"
+#include "../Contacto/Contacto.h"
 
 typedef struct nodo {
     struct nodo* nodoAnterior;

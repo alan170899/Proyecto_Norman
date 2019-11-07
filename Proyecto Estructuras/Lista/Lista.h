@@ -1,7 +1,7 @@
 #ifndef _LISTA_H_
 #define _LISTA_H_
 
-#include "Nodo\Nodo.h"
+#include "../Nodo/Nodo.h"
 
 typedef struct lista {
     Nodo primero;
