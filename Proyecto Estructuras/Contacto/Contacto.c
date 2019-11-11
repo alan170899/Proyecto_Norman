@@ -34,3 +34,11 @@ int modificarNombre(Contacto contactoModificar, char* nuevoNombre) {
     return ALL_OK;
 }
 
+int modificarNumero(Contacto contactoModificar, char* nuevoTelefono) {
+    if(contactoModificar == NULL || nuevoTelefono == NULL) {return OBJECT_NULL; }
+
+    strcpy(contactoModificar->telefono, nuevoTelefono);
+
+    return ALL_OK;
+}
+
