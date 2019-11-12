@@ -50,8 +50,8 @@ int main (){
 	char NuevoNombre[] = "PEPITO";
 	char NuevoTelefono[] = "1234567890";
 
-	Agenda = Agregar_Contacto (Agenda, NuevoNuembro, NuevoTelefono);
-	Mostrar(Agregar);
+	Agenda = Agregar_Contacto (Agenda, NuevoNombre, NuevoTelefono);
+	Mostrar(Agenda);
 
 	return 0;
 }
