@@ -3,8 +3,8 @@
 
 struct Lista {
 	struct *contacto;
-	contacto *siguiente;
-	contacto *anterior;
+	struct Lista *siguiente;
+	struct Lista *anterior;
 }
 
 struct Contacto {
@@ -30,11 +30,27 @@ void crear_contacto(struct Lista *Agenda, char NuevoNombre, char NuevoNumero){
 	if (Agenda == NULL){
 		Agenda = (struct Lista*) malloc (sizeof (strcut Lista));
 		Contacto = (struct Contacto*) malloc (sizeof (struct Contacto));
+		Contacto->nombre = (char *) malloc (sizeof 20 * (char));
+		Contacto->numero = (char *) malloc (sizeof 10 * (char));
+	}else {
+		Contacto->nombre = NuevoNombre;
+		Contacto->nombre = NuevoNumero;
+	}
+
+	struct Lista *siguiente = NULL;
+	STRUCT Lista *anterior = NULL;
+
+}
+
+
+
+
+
+
+
+
 
 	
-	contacto->nombre = NuevoNombre;
-	contacto->telefono = NuevoNumero;
-
 }
 
 
