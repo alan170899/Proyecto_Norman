@@ -1,0 +1,41 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+struct Lista {
+	struct *contacto;
+	contacto *siguiente;
+	contacto *anterior;
+}
+
+struct contacto {
+	char *nombre;
+	char *telefono;
+}
+
+int main (){
+
+	struct Lista Agenda = NULL;
+	crear_contacto(*lista, char  
+
+return 0;
+}
+
+void crear_contacto(struct Lista *lista, char *NuevoNombre, char *NuevoNumero){
+	if (lista == NULL){
+		lista = (lista*) malloc (sizeof (struct Lista));
+		contacto = (contacto*) malloc (sizeof (struct contacto);
+	
+	contacto->nombre = *(NuevoNombre);
+	contacto->telefono = *(NuevoNumero);
+
+}
+
+
+
+
+
+
+
+
+ 
+
