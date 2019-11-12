@@ -7,26 +7,33 @@ struct Lista {
 	contacto *anterior;
 }
 
-struct contacto {
+struct Contacto {
 	char *nombre;
 	char *telefono;
 }
 
+void crear_contacto(struct Lista *Agenda, char NuevoNombre, char NuevoNumero);
+
+
+
+
 int main (){
 
 	struct Lista Agenda = NULL;
-	crear_contacto(*lista, char  
+	
+	crear_contacto(&Agenda,   
 
 return 0;
 }
 
-void crear_contacto(struct Lista *lista, char *NuevoNombre, char *NuevoNumero){
-	if (lista == NULL){
-		lista = (lista*) malloc (sizeof (struct Lista));
-		contacto = (contacto*) malloc (sizeof (struct contacto);
+void crear_contacto(struct Lista *Agenda, char NuevoNombre, char NuevoNumero){
+	if (Agenda == NULL){
+		Agenda = (struct Lista*) malloc (sizeof (strcut Lista));
+		Contacto = (struct Contacto*) malloc (sizeof (struct Contacto));
+
 	
-	contacto->nombre = *(NuevoNombre);
-	contacto->telefono = *(NuevoNumero);
+	contacto->nombre = NuevoNombre;
+	contacto->telefono = NuevoNumero;
 
 }
 
