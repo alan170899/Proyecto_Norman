@@ -105,16 +105,19 @@ int main(){
   switch(opc){
 	case 1:
 		printf("Se entro correctamente a la primera opcion\n");
-		printf(" Introdusca un nombre : \n");
-		gets(Nombre);
-		printf(" Introdusca un telefono : \n");
-                gets(Telefono);
-		Agregar_Cont(Agenda,Nombre,Telefono);
+		Mostar_Ascendente(Agenda);
+                Mostar_Descendente(Agenda);
 	break;
 	case 2:
 		printf("Se entro correctamente a la segunda opcion\n");
-		Mostar_Ascendente(Agenda);
-		Mostar_Descendente(Agenda);
+		fflush(stdin);
+		printf(" Introdusca un nombre : \n");
+                gets(Nombre);
+		fflush(stdin);
+                printf(" Introdusca un telefono : \n");
+                gets(Telefono);
+		fflush(stdin);
+                Agregar_Cont(Agenda,Nombre,Telefono);
 	break;
 	case 3:
 		printf("Se entro correctamente a la tercera opcion\n");
