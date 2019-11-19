@@ -1,0 +1,42 @@
+error: número de argumentos inválidos, deberían ser 0
+uso: git config [<opciones>]
+
+Ubicación del archivo configuración
+    --global              usar archivo de config global
+    --system              usar archivo de config del sistema
+    --local               usar archivo de config del repositorio
+    --worktree            usar un archivo de config por árbol de trabajo
+    -f, --file <carpeta>  usar archivo config especificado
+    --blob <blob-id>      leer config del objeto blob suministrado
+
+Acción
+    --get                 obtener valor: nombre [valor-regex]
+    --get-all             obtener todos los valores: llave [valores-regex]
+    --get-regexp          obtener valores para una regexp: nombre-regex [valor-regex]
+    --get-urlmatch        obtener valor especifico para el URL: sección[.var] URL
+    --replace-all         remplazar todas las variables que concuerden: nombre valor [valor_regex]
+    --add                 agregar nueva variable: nombre valor
+    --unset               borrar una variable. nombre [valor-regex]
+    --unset-all           borrar todas las concurrencias: nombre [valor-regex]
+    --rename-section      renombrar sección: nombre-viejo nombre-nuevo
+    --remove-section      borrar una sección: nombre
+    -l, --list            listar todo
+    -e, --edit            abrir el editor
+    --get-color           encontrar el color configurado: slot [default]
+    --get-colorbool       encontrar las opciones del color: slot [stdout-es-tty]
+
+Tipo
+    -t, --type <>         al valor se ha dado este tipo
+    --bool                valor es "true" o "false"
+    --int                 valor es un numero decimal
+    --bool-or-int         valor es --bool o --int
+    --path                valor es una ruta (archivo o nombre de directorio)
+    --expiry-date         valor es una fecha de expiración
+
+Otro
+    -z, --null            terminar valores con un byte NULL
+    --name-only           mostrar solo nombres de variables
+    --includes            respetar directivas include en la búsqueda
+    --show-origin         mostrar el origen de configuración (archivo, stdin, blob, comando)
+    --default <valor>     con --get, usa el valor por defecto cuando falta una entrada
+
